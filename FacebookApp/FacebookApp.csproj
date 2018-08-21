@@ -55,6 +55,12 @@
     <Compile Include="eResultTypes.cs" />
     <Compile Include="FoundedPostsFacade.cs" />
     <Compile Include="GeneratorGreetingCardFacade.cs" />
+    <Compile Include="JustLoginToFacebook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JustLoginToFacebook.Designer.cs">
+      <DependentUpon>JustLoginToFacebook.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoggedInException.cs" />
     <Compile Include="MatchingFormFacade.cs" />
     <Compile Include="MainMenuFacade.cs" />
@@ -86,12 +92,6 @@
     </Compile>
     <Compile Include="GreetingCardForm.Designer.cs">
       <DependentUpon>GreetingCardForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LoginFacebook.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LoginFacebook.Designer.cs">
-      <DependentUpon>LoginFacebook.cs</DependentUpon>
     </Compile>
     <Compile Include="MatchingFormLogic.cs" />
     <Compile Include="MainMenuLogic.cs" />
@@ -130,8 +130,8 @@
     <EmbeddedResource Include="GreetingCardForm.resx">
       <DependentUpon>GreetingCardForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginFacebook.resx">
-      <DependentUpon>LoginFacebook.cs</DependentUpon>
+    <EmbeddedResource Include="JustLoginToFacebook.resx">
+      <DependentUpon>JustLoginToFacebook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MatchingFormUI.resx">
       <DependentUpon>MatchingFormUI.cs</DependentUpon>

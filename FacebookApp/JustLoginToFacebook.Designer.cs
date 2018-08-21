@@ -1,6 +1,6 @@
 ﻿namespace FacebookApp
 {
-    partial class LoginFacebook
+    partial class JustLoginToFacebook
     {
         /// <summary>
         /// Required designer variable.
@@ -29,41 +29,30 @@
         private void InitializeComponent()
         {
             this.Login = new System.Windows.Forms.Button();
-            this.appIdComboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // Login
             // 
             this.Login.AccessibleName = "";
             this.Login.AutoSize = true;
-            this.Login.Location = new System.Drawing.Point(104, 82);
+            this.Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.Login.Location = new System.Drawing.Point(51, 38);
+            this.Login.Margin = new System.Windows.Forms.Padding(2);
             this.Login.Name = "Login";
-            this.Login.Size = new System.Drawing.Size(171, 51);
-            this.Login.TabIndex = 0;
+            this.Login.Size = new System.Drawing.Size(223, 59);
+            this.Login.TabIndex = 1;
             this.Login.Text = "Login to Facebook";
             this.Login.UseVisualStyleBackColor = true;
-            this.Login.Click += new System.EventHandler(this.loginFacebook_Click);
+            this.Login.Click += new System.EventHandler(this.Login_Click);
             // 
-            // appIdComboBox
+            // JustLoginToFacebook
             // 
-            this.appIdComboBox.FormattingEnabled = true;
-            this.appIdComboBox.Location = new System.Drawing.Point(104, 26);
-            this.appIdComboBox.Name = "appIdComboBox";
-            this.appIdComboBox.Size = new System.Drawing.Size(171, 28);
-            this.appIdComboBox.TabIndex = 3;
-            this.appIdComboBox.Text = "Choose an app id:";
-            // 
-            // LoginFacebook
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(378, 159);
-            this.Controls.Add(this.appIdComboBox);
+            this.ClientSize = new System.Drawing.Size(329, 145);
             this.Controls.Add(this.Login);
-            this.Name = "LoginFacebook";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
-            this.Load += new System.EventHandler(this.LoginFacebook_Load);
+            this.Name = "JustLoginToFacebook";
+            this.Text = "JustLoginToFacebook";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -72,7 +61,5 @@
         #endregion
 
         private System.Windows.Forms.Button Login;
-        private System.Windows.Forms.ComboBox appIdComboBox;
     }
 }
-

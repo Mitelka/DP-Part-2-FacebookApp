@@ -15,7 +15,7 @@
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginFacebook());
+            Application.Run(new JustLoginToFacebook());
         }
     }
 }

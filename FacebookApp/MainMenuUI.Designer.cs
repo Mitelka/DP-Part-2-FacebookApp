@@ -35,7 +35,6 @@ namespace FacebookApp
             this.helloButton = new System.Windows.Forms.Label();
             this.openFileDialogToPickPicture = new System.Windows.Forms.OpenFileDialog();
             this.userName = new System.Windows.Forms.Label();
-            this.buttonlogin = new System.Windows.Forms.Button();
             this.userPictureBox = new System.Windows.Forms.PictureBox();
             this.buttonFindMyLove = new System.Windows.Forms.Button();
             this.postsFilterbtn = new System.Windows.Forms.Button();
@@ -68,16 +67,6 @@ namespace FacebookApp
             this.userName.TabIndex = 17;
             this.userName.Text = "label1";
             this.userName.Visible = false;
-            // 
-            // buttonlogin
-            // 
-            this.buttonlogin.Location = new System.Drawing.Point(83, 52);
-            this.buttonlogin.Name = "buttonlogin";
-            this.buttonlogin.Size = new System.Drawing.Size(109, 26);
-            this.buttonlogin.TabIndex = 18;
-            this.buttonlogin.Text = "Login";
-            this.buttonlogin.UseVisualStyleBackColor = true;
-            this.buttonlogin.Click += new System.EventHandler(this.buttonlogin_Click);
             // 
             // userPictureBox
             // 
@@ -137,10 +126,9 @@ namespace FacebookApp
             this.Controls.Add(this.postsFilterbtn);
             this.Controls.Add(this.buttonFindMyLove);
             this.Controls.Add(this.userPictureBox);
-            this.Controls.Add(this.buttonlogin);
             this.Controls.Add(this.userName);
             this.Controls.Add(this.helloButton);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainMenuUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainMenu";
@@ -157,7 +145,6 @@ namespace FacebookApp
         private System.Windows.Forms.OpenFileDialog openFileDialogToPickPicture;
         private System.Windows.Forms.BindingSource eventBindingSource;
         private System.Windows.Forms.Label userName;
-        private System.Windows.Forms.Button buttonlogin;
         private System.Windows.Forms.PictureBox userPictureBox;
         private System.Windows.Forms.Button buttonFindMyLove;
         private System.Windows.Forms.Button postsFilterbtn;

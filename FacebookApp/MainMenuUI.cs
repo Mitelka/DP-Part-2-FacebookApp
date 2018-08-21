@@ -21,44 +21,53 @@
         {
             m_Facade = i_Facade;
             InitializeComponent();
-            m_OpenFileDialogToPickPicture = openFileDialogToPickPicture;
             helloButton.Text = "Hello " + m_Facade.GetFirstNameOfUser() + ",";
+            showProfilePic();
+            userName.Visible = true;
+            ShowDialog();
+
+        }
+
+        private void showProfilePic()
+        {
+            userPictureBox.ImageLocation = m_Facade.GetProfilePicUrl();
+            userPictureBox.Load();
         }
 
         private void Menu_Load(object sender, EventArgs e)
         {
         }
 
-        private void LikestPicButton_Click(object sender, EventArgs e)
-        {
-            new Thread(findAndShowMaxPhoto).Start();
-        }
+        //private void LikestPicButton_Click(object sender, EventArgs e)
+        //{
+        //    new Thread(findAndShowMaxPhoto).Start();
+        //}
 
-        private void findAndShowMaxPhoto()
-        {
-            LikestPicButton.Invoke(new Action(() => LikestPicButton.Enabled = false));
-            m_MaxLikesPhoto = m_Facade.FindPopularPhoto();
-            showMaxPhoto();
-        }
+        //private void findAndShowMaxPhoto()
+        //{
+        //    LikestPicButton.Invoke(new Action(() => LikestPicButton.Enabled = false));
+        //    m_MaxLikesPhoto = m_Facade.FindPopularPhoto();
+        //    showMaxPhoto();
+        //}
 
-        private void showMaxPhoto()
-        {
-            if (m_MaxLikesPhoto == null)
-            {
-                MessageBox.Show("You do not have likes in your photos :(");
-            }
-            else
-            {
-                MostLikesPic.ImageLocation = m_MaxLikesPhoto.PictureNormalURL;
-                MostLikesPic.Load();
-                MessageBox.Show("Your most popular photo has reached " + m_MaxLikesPhoto.LikedBy.Count + " likes! Well Done!!!");
-            }
-        }
+        //private void showMaxPhoto()
+        //{
+        //    if (m_MaxLikesPhoto == null)
+        //    {
+        //        MessageBox.Show("You do not have likes in your photos :(");
+        //    }
+        //    else
+        //    {
+        //        MostLikesPic.ImageLocation = m_MaxLikesPhoto.PictureNormalURL;
+        //        MostLikesPic.Load();
+        //        MessageBox.Show("Your most popular photo has reached " + m_MaxLikesPhoto.LikedBy.Count + " likes! Well Done!!!");
+        //    }
+        //}
 
-        private void logoutButton_Click(object sender, EventArgs e)
-        {
-            FacebookWrapper.FacebookService.Logout(afterSuccessfullLogout);
-        }
+        //private void logoutButton_Click(object sender, EventArgs e)
+        //{
+        //    FacebookWrapper.FacebookService.Logout(afterSuccessfullLogout);
+        //}
 
         private void afterSuccessfullLogout()
         {
@@ -79,30 +88,7 @@
         private void genereateGreetingCardButton_Click_1(object sender, EventArgs e)
         {
             new GeneratorGreetingCardFormUI().Show();
-        }
-
-        private void buttonlogin_Click(object sender, EventArgs e)
-        {
-            const string appIdValue = "1914992165220174";
-            AppId appId = new AppId(appIdValue);
-            UserFacebookApp.s_AppId = appId;
-
-            try
-            {
-                UserFacebookApp TheUser = Singleton<UserFacebookApp>.Instance;
-           
-                userPictureBox.LoadAsync(TheUser.LoggedInUser.PictureNormalURL);
-                userName.Text = "Welcome " + TheUser.LoggedInUser.FirstName;
-                userName.Visible = true;
-
-            }
-            catch (LoggedInException i_LoggedInException)
-            {
-                MessageBox.Show(i_LoggedInException.Message);
-                
-            }
-
-        }
+        }                   
 
         private void userPictureBox_Click(object sender, EventArgs e)
         {

@@ -12,6 +12,7 @@
 
         public MainMenuLogic()
         {
+            UserFacebookApp TheUser = Singleton<UserFacebookApp>.Instance;
             m_LoggedInUser = Singleton<UserFacebookApp>.Instance.LoggedInUser;
         }
 
