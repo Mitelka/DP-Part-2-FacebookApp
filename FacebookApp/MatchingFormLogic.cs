@@ -1,12 +1,13 @@
-﻿namespace FacebookApp
+﻿using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+using FacebookWrapper.ObjectModel;
+
+namespace FacebookApp
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Globalization;
-    using System.Linq;
-    using System.Text;
     using static FacebookWrapper.ObjectModel.User;
-    using FacebookWrapper.ObjectModel;
 
     public class MatchingFormLogic
     {
@@ -33,6 +34,7 @@
                     matches.Add(friend);
                 }
             }
+
             return matches;
         }
 

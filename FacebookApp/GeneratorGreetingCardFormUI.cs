@@ -41,6 +41,7 @@
                     friend.ReFetch(DynamicWrapper.eLoadOptions.Full);
                     friendsListBox.Invoke(new Action(() => friendsListBox.Items.Add(friend)));
                 }
+
                 this.Invoke(new Action(() => this.ControlBox = true));
             }
             catch (InvalidOperationException i_Exception)
@@ -77,7 +78,6 @@
 
         private void GeneratorGreetingCardForm_Load(object sender, EventArgs e)
         {
-
         }
 
         private void listBoxGreetingCardOptions_SelectedIndexChanged(object sender, EventArgs e)

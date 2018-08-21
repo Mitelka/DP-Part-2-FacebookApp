@@ -1,6 +1,6 @@
 ﻿namespace FacebookApp
 {
-    partial class FoundedPostsUI
+    public partial class FoundedPostsUI
     {
         /// <summary>
         /// Required designer variable.

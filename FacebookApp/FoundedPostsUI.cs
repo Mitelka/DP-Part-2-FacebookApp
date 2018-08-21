@@ -1,7 +1,6 @@
 ﻿namespace FacebookApp
 {
     using System;
-    using FacebookWrapper.ObjectModel;
     using System.Collections.Generic;
     using System.ComponentModel;
     using System.Data;
@@ -9,6 +8,7 @@
     using System.Linq;
     using System.Text;
     using System.Windows.Forms;
+    using FacebookWrapper.ObjectModel;
 
     public partial class FoundedPostsUI : Form
     {
@@ -52,6 +52,7 @@ post.CreatedTime.ToString());
                 counterPosts++;
                 isFoundPost = true;
             }
+
             if (!isFoundPost)
             {
                 foundedPostText.Text = "No results for this pattern.";

@@ -1,11 +1,10 @@
-﻿namespace FacebookApp
+﻿using System;
+using System.Collections.Generic;
+using FacebookWrapper.ObjectModel;
+
+namespace FacebookApp
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
     using static FacebookWrapper.ObjectModel.User;
-    using FacebookWrapper.ObjectModel;
 
     public class MatchingFormFacade
     {

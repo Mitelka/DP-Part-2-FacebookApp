@@ -1,6 +1,6 @@
 ﻿namespace FacebookApp
 {
-    partial class JustLoginToFacebook
+    public partial class JustLoginToFacebook
     {
         /// <summary>
         /// Required designer variable.
@@ -17,6 +17,7 @@
             {
                 components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 
@@ -33,7 +34,7 @@
             // 
             // Login
             // 
-            this.Login.AccessibleName = "";
+            this.Login.AccessibleName = string.Empty;
             this.Login.AutoSize = true;
             this.Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.Login.Location = new System.Drawing.Point(51, 38);

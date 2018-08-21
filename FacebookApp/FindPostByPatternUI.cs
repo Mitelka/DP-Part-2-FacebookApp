@@ -1,7 +1,6 @@
 ﻿namespace FacebookApp
 {
     using System;
-    using FacebookWrapper.ObjectModel;
     using System.Collections.Generic;
     using System.ComponentModel;
     using System.Data;
@@ -10,6 +9,7 @@
     using System.Text;
     using System.Windows.Forms;
     using System.Threading;
+    using FacebookWrapper.ObjectModel;
 
     public partial class FindPostByPatternUI : Form
     {
@@ -51,6 +51,7 @@
                     FoundedPostsUI foundedPostsUI = new FoundedPostsUI(patternTextBox.Text, eResultTypes.AllPosts);
                     this.Invoke(new Action(() => foundedPostsUI.Show()));
                 }
+
                 this.searchButton.Invoke(new Action(() => this.searchButton.Text = originalText));
                 this.searchButton.Invoke(new Action(() => this.searchButton.Enabled = true));
             }

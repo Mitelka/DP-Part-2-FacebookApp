@@ -1,6 +1,6 @@
 ﻿namespace FacebookApp
 {
-    partial class MatchingFormUI
+    public partial class MatchingFormUI
     {
         /// <summary>
         /// Required designer variable.
@@ -17,6 +17,7 @@
             {
                 components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 

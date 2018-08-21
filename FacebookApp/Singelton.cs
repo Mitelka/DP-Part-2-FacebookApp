@@ -6,7 +6,6 @@
     using System.Reflection;
     using System.Text;
 
-    //
     // Copyright (c) DevInstinct Inc. All rights reserved.
     // http://devinstinct.com
     // Code author: Martin Lapierre
@@ -73,7 +72,8 @@
                             {
                                 throw new Exception(null, exception);
                             }
-                            if (constructor == null || constructor.IsAssembly) /// Also exclude internal constructors.
+
+                            if (constructor == null || constructor.IsAssembly)
                             {
                                 throw new Exception(string.Format("A private or protected constructor is missing for '{0}'.", typeof(T).Name));
                             }

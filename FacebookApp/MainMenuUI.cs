@@ -1,7 +1,6 @@
 ﻿namespace FacebookApp
 {
     using System;
-    using FacebookWrapper.ObjectModel;
     using System.Collections.Generic;
     using System.ComponentModel;
     using System.Data;
@@ -10,6 +9,7 @@
     using System.Text;
     using System.Windows.Forms;
     using System.Threading;
+    using FacebookWrapper.ObjectModel;
 
     public partial class MainMenuUI : Form
     {
@@ -25,7 +25,6 @@
             showProfilePic();
             userName.Visible = true;
             ShowDialog();
-
         }
 
         private void showProfilePic()
@@ -93,6 +92,5 @@
         private void userPictureBox_Click(object sender, EventArgs e)
         {
         }
-
     }
 }

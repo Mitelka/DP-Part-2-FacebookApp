@@ -1,16 +1,12 @@
 ﻿namespace FacebookApp
 {
     using System;
-    using FacebookWrapper.ObjectModel;
+
     using System.Collections.Generic;
-    using System.ComponentModel;
-    using System.Data;
     using System.Drawing;
-    using System.Linq;
-    using System.Text;
     using System.Windows.Forms;
+    using FacebookWrapper.ObjectModel;
     using static FacebookWrapper.ObjectModel.User;
-    using System.Globalization;
 
     public partial class MatchingFormUI : Form
     {

@@ -1,6 +1,6 @@
 ﻿namespace FacebookApp
 {
-    partial class GreetingCardForm
+    public partial class GreetingCardForm
     {
         /// <summary>
         /// Required designer variable.
@@ -17,6 +17,7 @@
             {
                 components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 

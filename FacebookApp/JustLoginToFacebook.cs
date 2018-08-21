@@ -30,7 +30,6 @@ namespace FacebookApp
             catch (LoggedInException i_LoggedInException)
             {
                 MessageBox.Show(i_LoggedInException.Message);
-
             }
         }
     }

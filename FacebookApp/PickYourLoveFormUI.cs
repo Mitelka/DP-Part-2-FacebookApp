@@ -1,18 +1,18 @@
-﻿namespace FacebookApp
-{
-    using System;
-    using FacebookWrapper.ObjectModel;
-    using System.Collections.Generic;
-    using System.ComponentModel;
-    using System.Data;
-    using System.Drawing;
-    using System.Linq;
-    using System.Text;
-    using System.Windows.Forms;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using FacebookWrapper.ObjectModel;
 
+namespace FacebookApp
+{
     public partial class PickYourLoveFormUI : Form
     {
-        List<User> m_Matches;
+        private List<User> m_Matches;
 
         public PickYourLoveFormUI(List<User> i_Matches)
         {

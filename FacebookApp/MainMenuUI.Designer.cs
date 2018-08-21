@@ -2,7 +2,7 @@
 
 namespace FacebookApp
 {
-    partial class MainMenuUI
+    public partial class MainMenuUI
     {
         /// <summary>
         /// Required designer variable.
@@ -19,6 +19,7 @@ namespace FacebookApp
             {
                 components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 
