@@ -1,4 +1,6 @@
-﻿namespace FacebookApp
+﻿using System;
+
+namespace FacebookApp
 {
     partial class MainMenuUI
     {

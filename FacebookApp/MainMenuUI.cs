@@ -104,5 +104,9 @@
 
         }
 
+        private void userPictureBox_Click(object sender, EventArgs e)
+        {
+        }
+
     }
 }
