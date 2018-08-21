@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{73FF7FE5-2A55-469C-977D-469EAE5714BB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FacebookApp</RootNamespace>
+    <AssemblyName>FacebookApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Facebook">
+      <HintPath>..\..\..\01_FB01_BasicFacebookFeatures.V6.8.0.17\01_FB01_BasicFacebookFeatures.V6.8.0.17\FBApi\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="FbGraphApiWrapper">
+      <HintPath>..\..\..\01_FB01_BasicFacebookFeatures.V6.8.0.17\01_FB01_BasicFacebookFeatures.V6.8.0.17\FBApi\FbGraphApiWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppId.cs" />
+    <Compile Include="BirthdayCard.cs" />
+    <Compile Include="eGreetingCardType.cs" />
+    <Compile Include="eResultTypes.cs" />
+    <Compile Include="FoundedPostsFacade.cs" />
+    <Compile Include="GeneratorGreetingCardFacade.cs" />
+    <Compile Include="LoggedInException.cs" />
+    <Compile Include="MatchingFormFacade.cs" />
+    <Compile Include="MainMenuFacade.cs" />
+    <Compile Include="FindPostByPatternUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindPostByPatternUI.Designer.cs">
+      <DependentUpon>FindPostByPatternUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FoundedPostsLogic.cs" />
+    <Compile Include="FoundedPostsUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FoundedPostsUI.Designer.cs">
+      <DependentUpon>FoundedPostsUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneratorGreetingCardFormUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneratorGreetingCardFormUI.Designer.cs">
+      <DependentUpon>GeneratorGreetingCardFormUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneratorGreetingCardLogic.cs" />
+    <Compile Include="GraduateCard.cs" />
+    <Compile Include="GreetingCard.cs" />
+    <Compile Include="GreetingCardFactory.cs" />
+    <Compile Include="GreetingCardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GreetingCardForm.Designer.cs">
+      <DependentUpon>GreetingCardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFacebook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFacebook.Designer.cs">
+      <DependentUpon>LoginFacebook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatchingFormLogic.cs" />
+    <Compile Include="MainMenuLogic.cs" />
+    <Compile Include="MainMenuUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenuUI.Designer.cs">
+      <DependentUpon>MainMenuUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovingApartmentCard.cs" />
+    <Compile Include="PickYourLoveFormUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PickYourLoveFormUI.Designer.cs">
+      <DependentUpon>PickYourLoveFormUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MatchingFormUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatchingFormUI.Designer.cs">
+      <DependentUpon>MatchingFormUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Singelton.cs" />
+    <Compile Include="UserFacebookApp.cs" />
+    <EmbeddedResource Include="FindPostByPatternUI.resx">
+      <DependentUpon>FindPostByPatternUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoundedPostsUI.resx">
+      <DependentUpon>FoundedPostsUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneratorGreetingCardFormUI.resx">
+      <DependentUpon>GeneratorGreetingCardFormUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GreetingCardForm.resx">
+      <DependentUpon>GreetingCardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFacebook.resx">
+      <DependentUpon>LoginFacebook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatchingFormUI.resx">
+      <DependentUpon>MatchingFormUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenuUI.resx">
+      <DependentUpon>MainMenuUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PickYourLoveFormUI.resx">
+      <DependentUpon>PickYourLoveFormUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\DataSources\FacebookWrapper.ObjectModel.Event.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

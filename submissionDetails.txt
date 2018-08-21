@@ -1,0 +1,10 @@
+==========================Exercise Checking Report==========================
+Exercise No...........: 2
+First Student Details.: 301674560 - Erez Mitelka
+Second Student Details: 305740177 - Raz
+Delivery Date.........: 26 - Augeust - 2018
+Delivered In Delay....: No
+Delay Reason..........:
+Visual Studio Version.: 2017
+Comments..............: None
+========================End Exercise Checking Report========================

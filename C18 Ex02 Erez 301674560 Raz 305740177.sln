@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookApp", "FacebookApp\FacebookApp.csproj", "{73FF7FE5-2A55-469C-977D-469EAE5714BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{18634C02-FE0B-4819-9832-DF27422D8D58}"
+	ProjectSection(SolutionItems) = preProject
+		submissionDetails.txt = submissionDetails.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73FF7FE5-2A55-469C-977D-469EAE5714BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73FF7FE5-2A55-469C-977D-469EAE5714BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73FF7FE5-2A55-469C-977D-469EAE5714BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73FF7FE5-2A55-469C-977D-469EAE5714BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {178A9D1A-DC23-4194-B1C9-0C75E10364AF}
+	EndGlobalSection
+EndGlobal
