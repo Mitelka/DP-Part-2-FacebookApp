@@ -40,8 +40,12 @@ namespace FacebookApp
             this.buttonFindMyLove = new System.Windows.Forms.Button();
             this.postsFilterbtn = new System.Windows.Forms.Button();
             this.genereateGreetingCardButton = new System.Windows.Forms.Button();
+            this.buttonLogOut = new System.Windows.Forms.Button();
+            this.LikestPicButton = new System.Windows.Forms.Button();
+            this.MostLikesPic = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.eventBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MostLikesPic)).BeginInit();
             this.SuspendLayout();
             // 
             // eventBindingSource
@@ -83,9 +87,9 @@ namespace FacebookApp
             this.buttonFindMyLove.BackColor = System.Drawing.SystemColors.ControlLight;
             this.buttonFindMyLove.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonFindMyLove.ForeColor = System.Drawing.Color.Red;
-            this.buttonFindMyLove.Location = new System.Drawing.Point(34, 231);
+            this.buttonFindMyLove.Location = new System.Drawing.Point(34, 250);
             this.buttonFindMyLove.Name = "buttonFindMyLove";
-            this.buttonFindMyLove.Size = new System.Drawing.Size(207, 47);
+            this.buttonFindMyLove.Size = new System.Drawing.Size(207, 58);
             this.buttonFindMyLove.TabIndex = 20;
             this.buttonFindMyLove.Text = "FindMyLove!";
             this.buttonFindMyLove.UseVisualStyleBackColor = false;
@@ -96,7 +100,7 @@ namespace FacebookApp
             this.postsFilterbtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.postsFilterbtn.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.postsFilterbtn.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.postsFilterbtn.Location = new System.Drawing.Point(34, 303);
+            this.postsFilterbtn.Location = new System.Drawing.Point(34, 314);
             this.postsFilterbtn.Name = "postsFilterbtn";
             this.postsFilterbtn.Size = new System.Drawing.Size(207, 47);
             this.postsFilterbtn.TabIndex = 21;
@@ -117,12 +121,47 @@ namespace FacebookApp
             this.genereateGreetingCardButton.UseVisualStyleBackColor = true;
             this.genereateGreetingCardButton.Click += new System.EventHandler(this.genereateGreetingCardButton_Click_1);
             // 
+            // buttonLogOut
+            // 
+            this.buttonLogOut.Font = new System.Drawing.Font("Miriam", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.buttonLogOut.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.buttonLogOut.Location = new System.Drawing.Point(88, 202);
+            this.buttonLogOut.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonLogOut.Name = "buttonLogOut";
+            this.buttonLogOut.Size = new System.Drawing.Size(87, 26);
+            this.buttonLogOut.TabIndex = 24;
+            this.buttonLogOut.Text = "Log Out";
+            this.buttonLogOut.UseCompatibleTextRendering = true;
+            this.buttonLogOut.UseVisualStyleBackColor = true;
+            this.buttonLogOut.Click += new System.EventHandler(this.buttonLogOut_Click);
+            // 
+            // LikestPicButton
+            // 
+            this.LikestPicButton.Location = new System.Drawing.Point(34, 437);
+            this.LikestPicButton.Name = "LikestPicButton";
+            this.LikestPicButton.Size = new System.Drawing.Size(207, 23);
+            this.LikestPicButton.TabIndex = 25;
+            this.LikestPicButton.Text = "What\'s my most popular pic?";
+            this.LikestPicButton.UseVisualStyleBackColor = true;
+            this.LikestPicButton.Click += new System.EventHandler(this.LikestPicButton_Click);
+            // 
+            // MostLikesPic
+            // 
+            this.MostLikesPic.Location = new System.Drawing.Point(94, 466);
+            this.MostLikesPic.Name = "MostLikesPic";
+            this.MostLikesPic.Size = new System.Drawing.Size(98, 67);
+            this.MostLikesPic.TabIndex = 26;
+            this.MostLikesPic.TabStop = false;
+            // 
             // MainMenuUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(276, 442);
+            this.ClientSize = new System.Drawing.Size(357, 543);
+            this.Controls.Add(this.MostLikesPic);
+            this.Controls.Add(this.LikestPicButton);
+            this.Controls.Add(this.buttonLogOut);
             this.Controls.Add(this.genereateGreetingCardButton);
             this.Controls.Add(this.postsFilterbtn);
             this.Controls.Add(this.buttonFindMyLove);
@@ -136,6 +175,7 @@ namespace FacebookApp
             this.Load += new System.EventHandler(this.Menu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.eventBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MostLikesPic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,5 +190,8 @@ namespace FacebookApp
         private System.Windows.Forms.Button buttonFindMyLove;
         private System.Windows.Forms.Button postsFilterbtn;
         private System.Windows.Forms.Button genereateGreetingCardButton;
+        private System.Windows.Forms.Button buttonLogOut;
+        private System.Windows.Forms.Button LikestPicButton;
+        private System.Windows.Forms.PictureBox MostLikesPic;
     }
 }
