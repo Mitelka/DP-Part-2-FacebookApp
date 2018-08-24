@@ -94,9 +94,7 @@
         private void buttonLogOut_Click(object sender, EventArgs e)
         {
             Close();
-            FacebookWrapper.FacebookService.Logout(() => {
-                MessageBox.Show("You successfully logged out!");
-            });
+            FacebookWrapper.FacebookService.Logout(() => { MessageBox.Show("You successfully logged out!"); });
         }
     }
 }
